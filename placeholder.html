@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>模拟placeholder</title>
+<style type="text/css">
+/*----- cqw reset css -----*/
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,pre,p,fieldset,input,textarea,blockquote{margin: 0;}
+ul,ol,input,textarea,fieldset,th,td{padding: 0;}
+fieldset,img,abbr,acronym{border: 0;}
+ol,ul{list-style: none;}
+input,textarea{border-width: 1px;}
+address,caption,cite,code,dfn,em,strong,th,var,i{font-weight: normal;font-style: normal;}
+table{border-collapse: collapse;border-spacing: 0;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;font-size: 100%;}
+q:before,q:after{content:'';}
+img{vertical-align: top;}
+caption,th{text-align: left;}
+a{color: #000; text-decoration: none; cursor: pointer;}
+textarea::-webkit-input-placeholder{ /* WebKit browsers */
+color: #dfdfdf;
+} 
+textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: #dfdfdf;
+} 
+input::-webkit-input-placeholder{ /* WebKit browsers */
+color: #dfdfdf;
+} 
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: #dfdfdf;
+} 
+body,input,textarea{
+	font-size: 14px; font-family: "微软雅黑";
+}
+/* input,textarea{
+	vertical-align: middle;
+} */
+.list li{
+	margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+	<form action="">
+		<ul class="list">
+			<li>
+				<label for=""><span>标题：</span></label>
+				<input type="text" name="" placeholder="请输入标题">
+				<span class="required"></span>
+			</li>
+			<li>
+				<label for=""><span>详情：</span></label>
+				<textarea style="width: 200px; height: 50px;" name="" id="" placeholder="请输入描述详情请输入描述详情"></textarea>
+				<span class="required"></span>
+			</li>
+		</ul>
+	</form>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="jquery.placeholder.js"></script>
+</body>
+</html>
